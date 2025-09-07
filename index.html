@@ -2,78 +2,127 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Audrey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Développeuse Web</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- ===== NAVIGATION ===== -->
   <header>
-    <nav>
+    <nav class="navbar">
       <h1 class="logo">Audrey<span>.</span></h1>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+      <div class="burger" onclick="toggleMenu()">☰</div>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-text">
+  <!-- ===== SECTION ACCUEIL ===== -->
+  <section id="home" class="home">
+    <div class="home-text">
       <h2>Bonjour, je suis <span>Audrey</span></h2>
-      <p>Développeuse Full-Stack passionnée par la création de solutions modernes et efficaces.</p>
+      <p>Développeuse Web passionnée par la création de sites modernes et responsive.</p>
       <a href="#projects" class="btn">Voir mes projets</a>
     </div>
-    <div class="hero-img">
+    <div class="home-img">
       <img src="images/profile.jpg" alt="Photo Audrey">
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
+  <!-- ===== À PROPOS ===== -->
   <section id="about" class="about">
-    <h2>À propos de moi</h2>
+    <h2>À propos</h2>
     <p>
-      Je suis une développeuse spécialisée en DevOps et Full-Stack.
-      J’aime construire des applications web performantes et design. 
-      Mon objectif : mettre mes compétences au service de projets innovants.
+      Actuellement en formation de Développement Web, je me spécialise dans la création de sites web
+      responsives, modernes et faciles à utiliser. J’aime transformer une idée en un produit concret
+      et visuellement attractif.
     </p>
+    <a href="CV_Audrey.pdf" class="btn">Télécharger mon CV</a>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
+  <!-- ===== PROJETS ===== -->
   <section id="projects" class="projects">
-    <h2>Mes Projets</h2>
+    <h2>Mes projets</h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="images/project1.jpg" alt="Projet 1">
-        <h3>Projet 1</h3>
-        <p>Application de gestion du temps pour la mairie de Gotham.</p>
+        <h3>Portfolio Web</h3>
+        <p>Mon propre site personnel en HTML, CSS et JavaScript, responsive.</p>
+        <a href="https://frebi225.github.io/portfolio_audrey/" target="_blank" class="btn">Voir le site</a>
+        <a href="https://github.com/frebi225/portfolio_audrey.git" target="_blank" class="btn">Code source</a>
       </div>
+  
       <div class="project-card">
-        <img src="images/project2.jpg" alt="Projet 2">
-        <h3>Projet 2</h3>
-        <p>Plateforme e-santé Orivie : Dossier médical numérique du citoyen.</p>
+        <h3>Site Vitrine</h3>
+        <p>Un site vitrine pour une association locale, réalisé en HTML & CSS.</p>
+        <a href="https://tonlien-vers-demo.com" target="_blank" class="btn">Voir le site</a>
+      </div>
+  
+      <div class="project-card">
+        <h3>Formulaire interactif</h3>
+        <p>Un formulaire avec validation JavaScript et design responsive.</p>
+        <a href="https://github.com/TonPseudo/formulaire-js" target="_blank" class="btn">Code source</a>
       </div>
     </div>
   </section>
+  
+
+  <!-- ===== COMPÉTENCES ===== -->
+  <section id="skills" class="skills">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML5 / CSS3</li>
+          <li>JavaScript ES6</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Outils</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+          <li>Figma (maquettes)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Autres</h3>
+        <ul>
+          <li>Bases en DevOps</li>
+          <li>Linux</li>
+          <li>Travail en équipe</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
 
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="contact">
     <h2>Contact</h2>
+    <p>📧 Email : <a href="mailto:audreyfrebi900@gmail.com">audreyfrebi900@gmail.com</a></p>
+    <p>🔗 LinkedIn : <a href="https://www.linkedin.com/in/audrey-komenan" target="_blank">linkedin.com/in/audrey-komenan</a></p>
+    <p>💻 GitHub : <a href="https://github.com/TonPseudo" target="_blank">github.com/frebi225</a></p>
+  
     <form>
       <input type="text" placeholder="Votre nom" required>
       <input type="email" placeholder="Votre email" required>
       <textarea placeholder="Votre message"></textarea>
-      <button type="submit">Envoyer</button>
+      <button type="submit" class="btn">Envoyer</button>
     </form>
   </section>
+  
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 Audrey - Tous droits réservés</p>
+    <p>© 2025 Audrey KOMENAN | Développeuse Web</p>
   </footer>
 
   <script src="script.js"></script>
