@@ -1,130 +1,272 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Développeuse Web</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Audrey<span>.</span></h1>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="burger" onclick="toggleMenu()">☰</div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">KOMENAN Audrey</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <!-- ===== SECTION ACCUEIL ===== -->
-  <section id="home" class="home">
-    <div class="home-text">
-      <h2>Bonjour, je suis <span>Audrey</span></h2>
-      <p>Développeuse Web passionnée par la création de sites modernes et responsive.</p>
-      <a href="#projects" class="btn">Voir mes projets</a>
-    </div>
-    <div class="home-img">
-      <img src="images/profile.jpg" alt="Photo Audrey">
-    </div>
-  </section>
+    <!-- Section Héros -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Je suis Audrey,<br>Développeur en devenir passionné par le web et le design !</h1>
+                <p>Bienvenue sur mon portfolio où je présente mes projets et compétences en développement web.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Image de profil">
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== À PROPOS ===== -->
-  <section id="about" class="about">
-    <h2>À propos</h2>
-    <p>
-      Actuellement en formation de Développement Web, je me spécialise dans la création de sites web
-      responsives, modernes et faciles à utiliser. J’aime transformer une idée en un produit concret
-      et visuellement attractif.
-    </p>
-    <a href="CV_Audrey.pdf" class="btn">Télécharger mon CV</a>
-  </section>
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je me nomme Audrey, passionné par la création de sites web modernes et interactifs. Je suis actuellement étudiant en développement web, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+                    <p>J'adore transformer mes idées en projets concrets et apprendre les nouvelles technologies. Mon objectif est de devenir un développeur full-stack compétent et de travailler sur des projets innovants.</p>
+                    <p>En dehors du développement web, je m'intéresse également au design UI/UX, à la photographie et aux nouvelles technologies émergentes.</p>
+                </div>
+                <div class="about-cv">
+                    <a href="Cv_KOMENAN.pdf" class="btn">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== PROJETS ===== -->
-  <section id="projects" class="projects">
-    <h2>Mes projets</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Portfolio Web</h3>
-        <p>Mon propre site personnel en HTML, CSS et JavaScript, responsive.</p>
-        <a href="https://frebi225.github.io/portfolio_audrey/" target="_blank" class="btn">Voir le site</a>
-        <a href="https://github.com/frebi225/portfolio_audrey.git" target="_blank" class="btn">Code source</a>
-      </div>
-  
-      <div class="project-card">
-        <h3>Site Vitrine</h3>
-        <p>Un site vitrine pour une association locale, réalisé en HTML & CSS.</p>
-        <a href="https://tonlien-vers-demo.com" target="_blank" class="btn">Voir le site</a>
-      </div>
-  
-      <div class="project-card">
-        <h3>Formulaire interactif</h3>
-        <p>Un formulaire avec validation JavaScript et design responsive.</p>
-        <a href="https://github.com/TonPseudo/formulaire-js" target="_blank" class="btn">Code source</a>
-      </div>
-    </div>
-  </section>
-  
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Vérification.png" alt="Capture du projet Vérification d'âge">
+                    </div>
+                    <div class="project-content">
+                        <h3>Vérification d'âge, Pair/Impair, Mois</h3>
+                        <p>Applications interactives pour vérifier l'âge, déterminer si un nombre est pair ou impair, et afficher le nom du mois.</p>
+                        <div class="project-tags">
+                            <span>#html</span>
+                            <span>#css</span>
+                            <span>#js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frebi225/V-rification_d-ge.git" target="_blank" class="project-link">Code GitHub</a>
+                            <a href="https://frebi225.github.io/V-rification_d-ge" target="_blank" class="project-link test-link">Tester le projet</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Nombrespremiers_fibonacci.png" alt="Capture du projet boucles et fibonnacci">
+                    </div>
+                    <div class="project-content">
+                        <h3>Boucles et Fibonacci</h3>
+                        <p>Implémentation des boucles for, while, do-while et génération de la séquence de Fibonacci.</p>
+                        <div class="project-tags">
+                            <span>#html</span>
+                            <span>#css</span>
+                            <span>#js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frebi225/fibonacci.git" target="_blank" class="project-link">Code GitHub</a>
+                            <a href="https://frebi225.github.io/fibonacci" target="_blank" class="project-link test-link">Tester le projet</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="chaînesdecaractères.png" alt="Capture du projet Nombres et Chaînes">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nombres et Chaînes</h3>
+                        <p>Applications pour nombres premiers, facteurs, moyennes, motifs et manipulation de chaînes de caractères.</p>
+                        <div class="project-tags">
+                            <span>#html</span>
+                            <span>#css</span>
+                            <span>#js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frebi225/facteur.git" target="_blank" class="project-link">Code GitHub</a>
+                            <a href="https://frebi225.github.io/facteur" target="_blank" class="project-link test-link">Tester le projet</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 -->
+                <div class="project-card">
+                    <div class="project-image">dates
+                        <img src="tempsréel.png" alt="Capture du projet Dates et Tableaux">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dates et Tableaux</h3>
+                        <p>Manipulation de dates, horloge en temps réel, manipulation de tableaux et calculateur de prêt hypothécaire.</p>
+                        <div class="project-tags">
+                            <span>#html</span>
+                            <span>#css</span>
+                            <span>#js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/frebi225/date.git" target="_blank" class="project-link">Code GitHub</a>
+                            <a href="https://frebi225.github.io/date" target="_blank" class="project-link test-link">Tester le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== COMPÉTENCES ===== -->
-  <section id="skills" class="skills">
-    <h2>Compétences</h2>
-    <div class="skills-grid">
-      <div>
-        <h3>Frontend</h3>
-        <ul>
-          <li>HTML5 / CSS3</li>
-          <li>JavaScript ES6</li>
-          <li>Responsive Design</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Outils</h3>
-        <ul>
-          <li>Git & GitHub</li>
-          <li>VS Code</li>
-          <li>Figma (maquettes)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Autres</h3>
-        <ul>
-          <li>Bases en DevOps</li>
-          <li>Linux</li>
-          <li>Travail en équipe</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Compétences Maîtrisées</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>CSS</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>VS Code</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3>Compétences en Développement</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>React.js</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="30%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MongoDB</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="20%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>UI/UX Design</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-width="35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>📧 Email : <a href="mailto:audreyfrebi900@gmail.com">audreyfrebi900@gmail.com</a></p>
-    <p>🔗 LinkedIn : <a href="https://www.linkedin.com/in/audrey-komenan" target="_blank">linkedin.com/in/audrey-komenan</a></p>
-    <p>💻 GitHub : <a href="https://github.com/TonPseudo" target="_blank">github.com/frebi225</a></p>
-  
-    <form>
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea placeholder="Votre message"></textarea>
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
-  </section>
-  
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Vous avez un projet en tête ?<br>N'hésitez pas à me contacter</h2>
+            <div class="contact-box">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2025 Audrey KOMENAN | Développeuse Web</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>2025 Audrey tout droit reservé</p>
+        </div>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
